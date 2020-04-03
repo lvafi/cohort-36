@@ -15,5 +15,13 @@ const query2 = knex.select('*').from('students').where('eyeColour', 'ilike', 'br
 
 query2.then((result) => {
   console.table(result);
-  knex.destroy();
+  // knex.destroy();
 });
+
+// Update student eyeColour whose id = 1
+const updateEyeColour = knex("students").where("id", 1).update({
+  eyeColour: "brown"
+});
+updateEyeColour.then((result) => {
+  console.log(result);
+}); 

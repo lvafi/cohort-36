@@ -2,7 +2,7 @@
   "name": "cohort-36",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "nodemon app.js",
     "db:create": "createdb --echo cohort_36",
@@ -15,7 +15,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
     "knex": "^0.20.13",
+    "morgan": "^1.10.0",
     "pg": "^8.0.0"
   },
   "devDependencies": {

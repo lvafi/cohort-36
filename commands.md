@@ -28,4 +28,11 @@ knex migrate:rollback
 # Creating a seed file for students
 knex seed:make 001_students
 
-```
+
+
+# Running a seed
+knex seed:run
+
+# Creating server
+# installing express, ejs, and morgan
+npm i --save express ejs morgan
